@@ -1,0 +1,385 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  margin: 0; /* Elimina todos los márgenes alrededor de la imagen */
+  padding: 0; /* Elimina cualquier relleno adicional */
+  display: block; /* Evita espacios en blanco generados por imágenes inline */
+}
+
+section {
+  scroll-margin-top: 7.75rem; /* Compensa la altura del encabezado fijo */
+}
+
+.navbar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  height: 7.6875rem;
+  flex-shrink: 0;
+  border-bottom: 0.0625rem solid #c1cfde; /*bordesito para que no se pierda la navbar*/
+  background-color: #48535e;
+  z-index: 1000;
+}
+
+.nav-bot {
+  display: flex;
+  align-items: center; /* Alinea los elementos verticalmente */
+  justify-content: space-between; /* Espacia el contenido horizontalmente */
+  font-size: 1.375rem;
+  line-height: normal;
+}
+
+.nav-bot a {
+  color: white;
+  padding: 1rem;
+}
+
+.nav-top {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: white;
+  padding-right: 2rem;
+}
+
+.nav-top div {
+  display: flex;
+  align-items: center; /* Alinea los elementos verticalmente */
+  padding-left: 1rem;
+}
+
+.nav-top img {
+  padding-inline: 0.7rem;
+}
+.nav-logo {
+  display: flex;
+  color: white;
+  font-size: 1.6rem;
+  line-height: normal;
+  align-items: center; /* Alinea los elementos verticalmente */
+}
+.nav-logo img {
+  height: 5.9375rem;
+}
+
+.nav-top img {
+  height: 1.25rem;
+}
+
+.marco1 {
+  background: linear-gradient(90deg, white 0%, #d6dbee 100%);
+  display: flex; /* Usamos Flexbox */
+  align-items: center; /* Centra verticalmente */
+}
+.marco1 button {
+  margin-top: 4rem;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid #969696;
+  background: #78abde;
+  box-shadow: 0.25rem 0.25rem 0.9375rem 0rem rgba(0, 0, 0, 0.25);
+  color: white;
+  width: 17.1875rem;
+  height: 6.125rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.marco1 h2 {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.marco1 h1 {
+  color: #000;
+  font-size: 3.4375rem;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 3rem;
+}
+
+.text-content {
+  flex: 1.5; /* Toma el espacio restante */
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center;
+}
+
+.photo-content {
+  flex: 1;
+  display: flex; /* Usamos Flexbox */
+}
+
+.photo-content img {
+  width: 100%; /* Asegura que la imagen sea responsiva */
+}
+
+.marco2 {
+  background: #48535e;
+  display: flex; /* Usamos Flexbox */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Espacia los elementos horizontalmente */
+}
+.marco2 div {
+  padding: 2rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.marco2 h3 {
+  padding: 2rem;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.marco3 {
+  background: linear-gradient(90deg, #d6dbee 0%, white 100%);
+  display: flex; /* Usamos Flexbox */
+  /* flex-direction: row-reverse; */
+  /* align-items: center; */ /* Centra verticalmente */
+  /* justify-content: center; */ /* Espacia los elementos horizontalmente */
+}
+
+.ant_car img {
+  width: 100%;
+}
+
+.ant_car {
+  flex: 1;
+}
+
+.carrusel {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Espacia los elementos horizontalmente */
+  flex: 0.5;
+}
+.orden_car {
+  height: 18rem;
+}
+.orden_car h2 {
+  color: #333;
+  text-align: center;
+  line-height: 1.375rem; /* 100% */
+  text-transform: uppercase;
+}
+.orden_car p {
+  color: #555;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: #333;
+}
+
+.carrusel_items {
+  display: flex; /* Usamos Flexbox */
+  align-items: center;
+}
+
+.arrow {
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  /* background: rgba(255, 255, 255, 0.7); */
+  padding: 0.625rem;
+  border-radius: 50%;
+  transition: color 0.3s;
+}
+.arrow:hover {
+  /* background: rgba(0, 0, 0, 0.3); */
+  color: #666;
+}
+
+#indicators {
+  display: flex;
+}
+
+.indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.marco4 {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center;
+  background: #162433;
+}
+
+.marco4 img {
+  width: 1.9rem;
+  height: 1.7rem;
+  display: inline;
+}
+
+.marco4 button {
+  border-radius: 1.25rem;
+  border: 0.0625rem solid #969696;
+  background: #78abde;
+  box-shadow: 0.25rem 0.25rem 0.9375rem 0rem rgba(0, 0, 0, 0.25);
+  color: white;
+  width: 20rem;
+  height: 6.125rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.marco4 h1 {
+  color: white;
+  font-size: 3.4rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.marco4 h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.marco4 {
+  padding-bottom: 0.5rem;
+}
+
+.marco5 {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Espacia los elementos horizontalmente */
+}
+
+.grupotarjeta {
+  display: flex;
+  justify-content: center; /* Espacia los elementos horizontalmente */
+}
+
+.tarjeta {
+  background-color: white;
+  border-radius: 1.5rem;
+  border: 0.0625rem solid #d4d2e3;
+  filter: drop-shadow(0.25rem 0.25rem 0.9375rem rgba(0, 0, 0, 0.25));
+  margin: 1.25rem;
+  padding: 1.25rem;
+}
+
+.ordentarjeta {
+  flex: 0.3;
+  display: inline-block;
+}
+
+.titulomarco5 {
+  font-size: 3.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.ordentarjeta img {
+  width: 15%;
+}
+
+.ordentarjeta h2 {
+  font-size: 1.5rem;
+  margin: 0.625rem 0;
+  text-align: center;
+}
+
+.ordentarjeta p {
+  font-size: 1rem;
+  color: #666;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.marco6 {
+  background: linear-gradient(90deg, #fff 0%, #d6dbee 100%);
+  display: flex;
+  align-items: center; /* Espacia los elementos horizontalmente */
+}
+
+.grupo_exp {
+  display: flex;
+  flex-direction: column;
+  flex: 0.9;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Espacia los elementos horizontalmente */
+}
+.orden_exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17.5rem;
+  height: 17.5rem;
+}
+
+.orden_exp p {
+  color: #555;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.orden_exp h3 {
+  color: #78abde;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  position: absolute;
+  bottom: 1.25rem;
+}
+
+.orden_exp img {
+  border-radius: 4rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.marco7 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.marco7 hr {
+  width: 95%;
+  border-top: 0.125rem solid black;
+}
+
+.marco7 p {
+  margin-left: 2.5rem;
+}

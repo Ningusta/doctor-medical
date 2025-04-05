@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <nav class="nav-top">
+        <div><img src="./img/ico_locacion.png" />Cll 1N #10 - 23</div>
+        <div><img src="./img/ico_tel.png" />+57 313 3380 339</div>
+      </nav>
+      <nav class="nav-bot">
+        <div class="nav-logo">
+          <img src="./img/logosuarez.png" alt="" />
+          <a href="#">Dr. Alejandro Marques</a>
+        </div>
+        <div class="links-nav">
+          <a href="#Inicio">Inicio</a>
+          <a href="#Procedimientos">Procedimientos</a>
+          <a href="#FAQ">¿Por que un Fisiatra?</a>
+        </div>
+      </nav>
+    </nav>
+    <!-- INICIO -->
+    <section class="marco1" id="Inicio">
+      <div class="text-content">
+        <h2>¿Alteraciones Osteomusculares?</h2>
+        <h2 style="margin-top: 2rem">¿Dolor Crónico?</h2>
+        <h1>¡Acá estamos para ayudarlo!</h1>
+        <button>Agenda ya</button>
+      </div>
+      <div class="photo-content">
+        <img src="./img/foto_marco1.png" alt="" />
+      </div>
+    </section>
+    <!-- Lamado a la acción -->
+    <section class="marco2" id="contador-section">
+      <div id="contador1">0</div>
+      <h3>Años en el area<br />de medicina</h3>
+      <div id="contador2">0</div>
+      <h3>Años como<br />especialista</h3>
+      <div id="contador3">0</div>
+      <h3>Pacientes en mi<br />servicio</h3>
+    </section>
+    <!-- Procedimientos -->
+    <section class="marco3" id="Procedimientos">
+      <div class="ant_car"><img src="./img/foto_marco3.png" alt="" /></div>
+      <div class="carrusel">
+        <div class="carrusel_items">
+          <div class="arrow arrow-left no-select" onclick="cambiarDiap(-1)">
+            &#9664;
+          </div>
+          <div id="car" class="tarjeta orden_car" style="display: grid">
+            <h2>CONSULTA DE EVALUACIÓN</h2>
+            <p>Realizamos un análisis detallado de tu condición física para diagnosticar y 
+              planificar el tratamiento más adecuado según tus necesidades.</p>
+          </div>
+          <div id="car" class="tarjeta orden_car" style="display: none">
+            <h2>DISEÑO DE PROGRAMAS PREVENTIVOS</h2>
+            <p>Creamos programas personalizados para prevenir lesiones, mejorar la movilidad y optimizar tu rendimiento físico.</p>
+          </div>
+          <div id="car" class="tarjeta orden_car" style="display: none">
+            <h2>TERAPIAS FISICAS</h2>
+            <p>Ofrecemos una variedad de terapias diseñadas para aliviar el dolor, rehabilitar lesiones y recuperar la funcionalidad de tu cuerpo.</p>
+          </div>
+          <div id="car" class="tarjeta orden_car" style="display: none">
+            <h2>TELEMEDICINA</h2>
+            <p>Accede a consultas virtuales con el mismo nivel de atención profesional, desde la comodidad de tu hogar.</p>
+          </div>
+          <div class="arrow arrow-right no-select" onclick="cambiarDiap(1)">
+            &#9654;
+          </div>
+        </div>
+        <div id="indicators"></div>
+      </div>
+    </section>
+    <!-- Otro llamado a la acción -->
+    <section class="marco4">
+      <h1>Tu salud nos importa, y estamos aquí para ti.</h1>
+      <h2>Comunícate con nosotros y agenda tu cita</h2>
+      <button>
+        <img src="./img/ico_tel.png" />
+        Llama ahora
+      </button>
+    </section>
+    <section class="marco5" id="FAQ">
+      <h1 class="titulomarco5">¿Por qué el Dr. Edwin Suarez?</h1>
+      <div class="grupotarjeta">
+        <article class="tarjeta ordentarjeta">
+          <img src="img/ico_card1.png" />
+          <h2>Diagnóstico y tratamiento de trastornos musculoesqueléticos</h2>
+          <p>
+            Los fisiatras son especialistas en medicina física y rehabilitación,
+            por lo que se enfocan en diagnosticar y tratar problemas en los
+            músculos, huesos y articulaciones. Esto es fundamental para posibles
+            rutinas de dolor crónico, lesiones deportivas, problemas de postura
+            o enfermedades que afectan el sistema musculoesquelético.
+          </p>
+        </article>
+        <article class="tarjeta ordentarjeta">
+          <img src="img/ico_card2.png" />
+          <h2>Recuperación de lesiones y mejora funcional</h2>
+          <p>
+            Un fisiatra puede diseñar un plan de rehabilitación personalizado
+            que ayude a recuperar la movilidad, fuerza y funcionalidad después
+            de una lesión, cirugía, fractura o enfermedad. Este tratamiento
+            puede incluir terapia física, ejercicios específicos, y
+            recomendaciones para mejorar la calidad de vida sin dolor.
+          </p>
+        </article>
+        <article class="tarjeta ordentarjeta">
+          <img src="img/ico_card3.png" />
+          <h2>Prevención de discapacidades y mejora de la calidad de vida</h2>
+          <p>
+            Los fisiatras ayudan en prevenir el desarrollo de discapacidades y
+            mejorar la calidad de vida de sus pacientes. A través de
+            tratamientos específicos, se puede evitar el avance de ciertas
+            condiciones, reducir el dolor crónico y aumentar la independencia en
+            la vida diaria, lo que resulta en una mejor calidad de vida.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="marco6">
+      <div class="grupo_exp">
+        <div class="tarjeta orden_exp">
+          <img src="img/exp1.png" />
+          <h2>INCREIBLE SERVICIO</h2>
+          <p>
+            El doctor muy eficiente y su <br />
+            atencion impecable
+          </p>
+          <h3>Jennifer Laguado</h3>
+        </div>
+        <div class="tarjeta orden_exp">
+          <img src="img/exp2.png" />
+          <h2>MUY ATENTO</h2>
+          <p>
+            Me ayudó con mis dolores <br />
+            de espalda, fue muy amable <br />
+            siempre.
+          </p>
+          <h3>Laura Polo</h3>
+        </div>
+      </div>
+      <div class="photo-content">
+        <img src="./img/foto_marco6.png" />
+      </div>
+      <div class="grupo_exp">
+        <div class="tarjeta orden_exp">
+          <img src="img/exp3.png" />
+          <h2>SERVICIAL Y CORDIAL</h2>
+          <p>
+            El Dr. Suarez ayudo a mi <br />
+            madre y siempre estuvo <br />
+            atento a su proceso.
+          </p>
+          <h3>Mariana Velasquez</h3>
+        </div>
+        <div class="tarjeta orden_exp">
+          <img src="img/exp4.png" />
+          <h2>MUY ATENTO</h2>
+          <p>
+            Su sencillez y su honestidad <br />
+            algo que destaco del <br />
+            Doctor.
+          </p>
+          <h3>Alberto Machado</h3>
+        </div>
+      </div>
+    </section>
+    <footer class="marco7">
+      <hr />
+      <p>Todos los derechos reservados | Terminos y condiciones aplicados</p>
+      <ul class="social-icons"></ul>
+    </footer>
+  </body>
+  <script src="./js/main.js"></script>
+</html>
