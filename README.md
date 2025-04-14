@@ -2,12 +2,11 @@
 
 En este proyecto creamos una plantilla dirigida para un usuario en el sector salud. Esta plantilla incluye diseño responsive para Desktop, Tablets y Movil.
 
-> Este proyecto es una practica web, poniendo a prueba el desarrollo web.
-> Diseño realizado por: @ejaimesb
-> Desarrollo por: @Ningusta y @diegoperez10
+> Este proyecto es una practica web, poniendo a prueba el desarrollo web y trabajo de equipo (ejaimesb, ningusta y diegoperez10).
 
 ## Tecnologías y técnicas utilizadas
 
+- **Figma** montaje de diseño 
 - **HTML5** para la estructura del contenido.  
 - **CSS3** para el diseño y la maquetación responsive.
 - **JavaScript** para movimiento de panel de numeros
